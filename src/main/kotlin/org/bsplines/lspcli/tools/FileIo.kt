@@ -8,20 +8,11 @@
 
 package org.bsplines.lspcli.tools
 
-import java.io.IOException
 import java.nio.charset.StandardCharsets
 import java.nio.file.Files
 import java.nio.file.Path
 
 object FileIo {
-  fun readFile(filePath: Path): String? =
-    try {
-      readFileWithException(filePath)
-    } catch (e: IOException) {
-      Logging.logger.warning(I18n.format("couldNotReadFile", e, filePath.toString()))
-      null
-    }
-
   fun readFileWithException(filePath: Path): String =
     String(Files.readAllBytes(filePath), StandardCharsets.UTF_8)
 

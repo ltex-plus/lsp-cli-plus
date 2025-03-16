@@ -84,18 +84,6 @@ object I18n {
     return formatter.format(stringArguments)
   }
 
-  fun format(
-    key: String,
-    e: Exception,
-    vararg messageArguments: Any?,
-  ): String {
-    val builder = StringBuilder()
-    builder.append(format(key, messageArguments))
-    builder.append(". ")
-    builder.append(format(e))
-    return builder.toString()
-  }
-
   fun format(e: Exception): String {
     val writer = StringWriter()
     writer.write(format("followingExceptionOccurred"))

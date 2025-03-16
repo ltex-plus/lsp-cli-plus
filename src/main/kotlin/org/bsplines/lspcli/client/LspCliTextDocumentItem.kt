@@ -84,17 +84,6 @@ class LspCliTextDocumentItem(
     }
   }
 
-  fun convertPosition(pos: Int): Position {
-    var line: Int = this.lineStartPosList.binarySearch(pos)
-
-    if (line < 0) {
-      val insertionPoint: Int = -line - 1
-      line = insertionPoint - 1
-    }
-
-    return Position(line, pos - this.lineStartPosList[line])
-  }
-
   override fun setText(text: String) {
     super.setText(text)
     reinitializeLineStartPosList(text)

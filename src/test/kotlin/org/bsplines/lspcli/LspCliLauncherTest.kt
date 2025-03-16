@@ -84,6 +84,7 @@ class LspCliLauncherTest {
     val subdir = "test-dir"
     TestTools.createTextFile("This is a test.", "typst-2.typ", subdir)
     TestTools.createTextFile("This is a test.", "markdown-1.md", subdir)
+    TestTools.createTextFile("This is a test.", "unknown-fileExtension-1.text", subdir)
     TestTools.createTextFile("This is an test.", "text-1.txt", subdir)
     val returncode =
       LspCliLauncher.run(
