@@ -16,6 +16,11 @@ import kotlin.test.assertEquals
 class LspCliLauncherTest {
   @BeforeTest
   fun setUp() {
+    /* Prevent warning message "Corrupted channel by directly writing to native stream in forked JVM 1"
+    <forkCount>0</forkCount> removes the warning message, but disables jacoco code coverage checks
+     */
+    System.setOut(TestTools.getPrintStream())
+
     TestTools.downloadAndExtractLanguageServer(TestTools.getGitHubURL())
   }
 

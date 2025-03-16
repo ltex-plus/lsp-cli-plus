@@ -10,6 +10,7 @@ package org.bsplines.lspcli.testtools
 
 import java.io.File
 import java.io.FileOutputStream
+import java.io.PrintStream
 import java.net.HttpURLConnection
 import java.net.URI
 import java.nio.file.Files
@@ -26,6 +27,11 @@ object TestTools {
     WINDOWS("windows"),
     MAC("mac"),
     LINUX("linux"),
+  }
+
+  fun getPrintStream(): PrintStream {
+    val file = File(Paths.get(OUTPUTDIR, "output-stream.txt").toUri())
+    return PrintStream(file)
   }
 
   fun getGitHubURL(): String {
