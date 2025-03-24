@@ -17,6 +17,9 @@
       <action type="update">
         Add aarch64 Java runtimes for Linux (e.g. Raspberry Pi), macOS (Apple M1 SoC and its successors) and Windows on ARM. Update bundled Java runtime from 21.0.4+7 to 21.0.5+11.
       </action>
+      <action type="add" issue="ltex-plus/vscode-ltex-plus#128">
+        Add support for AsciiDoc (LSP language IDs `asciidoc`)
+      </action>
     </release>
     <release version="2.1.0" date="2025-01-08">
       <action type="add" issue="ltex-plus/ltex-ls-plus#55">
