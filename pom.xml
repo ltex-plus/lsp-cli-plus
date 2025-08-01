@@ -43,7 +43,7 @@
     <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
     <main.class>org.bsplines.lspcli.LspCliLauncher</main.class>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <junit.jupiter.version>5.13.2</junit.jupiter.version>
+    <junit.jupiter.version>5.13.4</junit.jupiter.version>
   </properties>
   <dependencies>
     <dependency>
@@ -297,7 +297,7 @@ if %ERROR_CODE% EQU 0 set ERROR_CODE=1</replacevalue>
           <dependency>
             <groupId>com.pinterest.ktlint</groupId>
             <artifactId>ktlint-cli</artifactId>
-            <version>1.6.0</version>
+            <version>1.7.1</version>
           </dependency>
         </dependencies>
       </plugin>
