@@ -13,6 +13,14 @@
     <author>Julian Valentin, Daniel Spitzer, lsp-cli-plus Development Community</author>
   </properties>
   <body>
+    <release version="2.2.1" date="2025-09-04">
+      <action type="update">
+        Update bundled Java runtime from 21.0.5+11 to 21.0.8+9.
+      </action>
+      <action type="update">
+        Bump Kotlin to 2.2.10, JUnit Jupiter to 5.13.4, Google Gson to 2.13.1, Jansi to 2.4.1, Picoli to 4.7.7, JaCoCo to 0.8.13 and ktlint to 1.7.1
+      </action>
+    </release>
     <release version="2.2.0" date="2025-04-04">
       <action type="update">
         Add aarch64 Java runtimes for Linux (e.g. Raspberry Pi), macOS (Apple M1 SoC and its successors) and Windows on ARM. Update bundled Java runtime from 21.0.4+7 to 21.0.5+11.
