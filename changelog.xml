@@ -13,6 +13,8 @@
     <author>Julian Valentin, Daniel Spitzer, lsp-cli-plus Development Community</author>
   </properties>
   <body>
+    <release version="2.2.3" date="upcoming">
+    </release>
     <release version="2.2.2" date="2026-04-24">
       <action type="update">
         Update bundled Java runtime from 21.0.8+9 to 21.0.10+7.
