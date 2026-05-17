@@ -50,14 +50,8 @@ class LspCliTextDocumentItem(
     val text: String = text
 
     return when {
-      line < 0 -> {
-        0
-      }
-
-      line >= this.lineStartPosList.size -> {
-        text.length
-      }
-
+      line < 0 -> 0
+      line >= this.lineStartPosList.size -> text.length
       else -> {
         val lineStart: Int = this.lineStartPosList[line]
         val nextLineStart: Int =
@@ -69,10 +63,7 @@ class LspCliTextDocumentItem(
         val lineLength: Int = nextLineStart - lineStart
 
         when {
-          character < 0 -> {
-            lineStart
-          }
-
+          character < 0 -> lineStart
           character >= lineLength -> {
             var pos: Int = lineStart + lineLength
 
@@ -87,10 +78,7 @@ class LspCliTextDocumentItem(
 
             pos
           }
-
-          else -> {
-            lineStart + character
-          }
+          else -> lineStart + character
         }
       }
     }
