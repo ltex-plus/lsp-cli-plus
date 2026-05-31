@@ -13,9 +13,20 @@
     <author>Julian Valentin, Daniel Spitzer, lsp-cli-plus Development Community</author>
   </properties>
   <body>
-    <release version="2.2.2" date="upcoming">
+    <release version="2.2.3" date="upcoming">
       <action type="add" due-to="Andrea Alberti (@alberti42)">
         Map `.el` file extension to `elisp` in `FileIo.getCodeLanguageIdFromPath`. Previously `.el` was unknown to the CLI, so `ltex-cli-plus file.el` fell back to plain-text checking and flagged every code token (`setq`, `:init`, …) as a misspelling. Requires a recent ltex-ls-plus that accepts `elisp` as a `codeLanguageId` alias for `lisp`.
+      </action>
+      <action type="fix" issue="ltex-plus/lsp-cli-plus#51">
+        Revert LSP4J from 0.24.0 to 1.0.0.
+      </action>
+    </release>
+    <release version="2.2.2" date="2026-04-24">
+      <action type="update">
+        Update bundled Java runtime from 21.0.8+9 to 21.0.10+7.
+      </action>
+      <action type="update">
+        Bump Kotlin to 2.3.10, JUnit Jupiter to 6.0.3, LSP4J to 1.0.0, Google Gson to 2.13.2, Jansi to 2.4.2, Picoli to 4.7.7, Maven Dependency Plugin to 3.10.0, Maven Surefire Plugin to 3.5.5, JaCoCo Maven Plugin to 0.8.14, Maven JAR Plugin to 3.5.0, Maven AntRun Plugin to 3.2.0, ktlint to 1.8.0 and Maven Assembly Plugin to 3.8.0.
       </action>
     </release>
     <release version="2.2.1" date="2025-09-04">
