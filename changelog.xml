@@ -13,7 +13,7 @@
     <author>Julian Valentin, Daniel Spitzer, lsp-cli-plus Development Community</author>
   </properties>
   <body>
-    <release version="2.2.3" date="upcoming">
+    <release version="2.3.0" date="upcoming">
       <action type="add" due-to="Andrea Alberti (@alberti42)">
         Map `.el` file extension to `elisp` in `FileIo.getCodeLanguageIdFromPath`. Previously `.el` was unknown to the CLI, so `ltex-cli-plus file.el` fell back to plain-text checking and flagged every code token (`setq`, `:init`, …) as a misspelling. Requires a recent ltex-ls-plus that accepts `elisp` as a `codeLanguageId` alias for `lisp`.
       </action>
