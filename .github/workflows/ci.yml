@@ -122,8 +122,11 @@ jobs:
         run: "python tools/createBinaryArchives.py"
 
       - name: "Create GitHub Release"
+        # Stage as a draft so a maintainer can review the release and its assets,
+        # then publish it manually (uncheck the draft box on the release page).
         run: >
           gh release create ${{ github.ref_name }}
+          --draft
           --prerelease=${{ env.LSP_CLI_IS_PRERELEASE }}
           --title='${{ env.LSP_CLI_PLUS_VERSION }}'
           --notes='${{ env.LSP_CLI_CHANGELOG }}'
