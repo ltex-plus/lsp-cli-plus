@@ -13,7 +13,10 @@
     <author>Julian Valentin, Daniel Spitzer, lsp-cli-plus Development Community</author>
   </properties>
   <body>
-    <release version="2.4.0" date="upcoming">
+    <release version="3.0.0" date="upcoming">
+      <action type="update">
+        Bump LSP4J to 1.0.0. This is considered a breaking change as LSP4J 1.0.0 ships LSP 3.18.
+      </action>
     </release>
     <release version="2.3.0" date="2026-06-07">
       <action type="add" due-to="Andrea Alberti (@alberti42)">

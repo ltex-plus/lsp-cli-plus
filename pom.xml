@@ -11,7 +11,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.bsplines</groupId>
   <artifactId>lspcli</artifactId>
-  <version>2.4.0-alpha</version>
+  <version>3.0.0-alpha</version>
   <name>${project.groupId}:${project.artifactId}</name>
   <description>lsp-cli-plus: CLI language client for LSP language servers</description>
   <url>https://github.com/ltex-plus/lsp-cli-plus</url>
@@ -53,7 +53,7 @@
     <dependency>
       <groupId>org.eclipse.lsp4j</groupId>
       <artifactId>org.eclipse.lsp4j</artifactId>
-      <version>0.24.0</version>
+      <version>1.0.0</version>
     </dependency>
     <dependency>
       <groupId>com.google.code.gson</groupId>
