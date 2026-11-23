@@ -13,7 +13,7 @@
     <author>Julian Valentin, Daniel Spitzer, lsp-cli-plus Development Community</author>
   </properties>
   <body>
-    <release version="3.0.1" date="upcoming">
+    <release version="3.0.1" date="2026-11-23">
       <action type="fix" issue="ltex-plus/ltex-ls-plus#199" due-to="Andrea Alberti (@alberti42)">
         Print the text of a diagnostic's message. Since LSP4J 1.0.0, `Diagnostic.getMessage()` returns `Either&lt;String, MarkupContent&gt;`, and 3.0.0 printed that object, so every diagnostic read `Either [ left = '…' right = null ]` instead of the message.
       </action>
