@@ -194,7 +194,7 @@ class Checker(
           .reset()
           .bold()
           .a(" ")
-          .a(diagnostic.message)
+          .a(diagnostic.message.map({ it }, { it.value }))
       )
       if (diagnosticCode.isNotEmpty()) ansi.a(" [").a(diagnosticCode).a("]")
       ansi.reset()
